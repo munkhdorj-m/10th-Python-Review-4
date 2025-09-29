@@ -9,18 +9,19 @@ https://drive.google.com/file/d/1_Spi5yo7H50BZ933mYh-zUveuMAroKe4/view?usp=shari
 
 **Problem:**
 
-Input a number and find the number of digits.
+Input a list of numbers. Find the largest and smallest elements in the list.
 
 **Example:**
 
-    Input: 1234  
-    Output: 4
+    Input: [4, 9, 1, 7]  
+    Output: [9, 1]  
     
-    Input: 7  
-    Output: 1
+    Input: [10, 5, 20]  
+    Output: [20, 5]  
     
-    Input: 0  
-    Output: 1
+    Input: [3]  
+    Output: [3, 3]  
+
 
 ---
 
@@ -28,18 +29,15 @@ Input a number and find the number of digits.
 
 **Problem:**
 
-Input a number and calculate its factorial using a loop.
+Input a list and create a new list that is the original list followed by its reverse.
 
 **Example:**
 
-    Input: 5  
-    Output: 120   # 5*4*3*2*1
+    Input: [1, 2, 3]  
+    Output: [1, 2, 3, 3, 2, 1]  
     
-    Input: 0  
-    Output: 1
-    
-    Input: 6  
-    Output: 720 
+    Input: ['a', 'b']  
+    Output: ['a', 'b', 'b', 'a']  
 
 
 ---
@@ -48,15 +46,19 @@ Input a number and calculate its factorial using a loop.
 
 **Problem:**
 
-Input a number n and print all prime numbers up to n.
+Input a list of numbers. Ask for a target number, then count how many times it appears.
 
 **Example**
 
-    Input: 10  
-    Output: 2 3 5 7
+    Input: [1, 2, 2, 3, 4, 2], target: 2  
+    Output: 3  
     
-    Input: 20  
-    Output: 2 3 5 7 11 13 17 19
+    Input: [5, 5, 5, 5], target: 5  
+    Output: 4  
+    
+    Input: [10, 20, 30], target: 40  
+    Output: 0  
+
     
 ---
 
@@ -64,73 +66,62 @@ Input a number n and print all prime numbers up to n.
 
 **Problem:**
 
-Input n numbers into a list, then calculate their average.
+Find index of largest element in a given list.
 
 **Example**
 
-    Input: [3, 5, 7]  
-    Output: 5.0
+    Input: [4, 9, 1, 7]  
+    Output: 1  
     
-    Input: [10, 20, 30, 40]  
-    Output: 25.0
+    Input: [10, 5, 20, 20]  
+    Output: 2  
     
-    Input: [1]  
-    Output: 1.0
+    Input: [3]  
+    Output: 0  
+
     
 ---
 
-## Exercise 5 (Optional)
+## Exercise 5 
 
 **Problem:**
-Make a game where the program picks a random number between 1 and 20.
-The user keeps guessing until the correct number is guessed.
-
+Input a number n and create a list containing the squares of numbers from 1 to n.
 
 **Example**
 
-    Program: I have chosen a number between 1 and 20. Guess it!
-    User: 10
-    Program: Too high!
-    User: 5
-    Program: Too low!
-    User: 7
-    Program: Correct! You guessed it in 3 tries.
+    Input: 5  
+    Output: [1, 4, 9, 16, 25]  
+    
+    Input: 3  
+    Output: [1, 4, 9]  
+    
+    Input: 1  
+    Output: [1]  
 
     
 ---
 
 ## Exercise 6 (Optional)
 
-**Problem:**
-Bulls and Cows game:
+**Problem:** 
 
-- The computer generates a random 3-digit number (with non-repeating digits).
-- The user guesses the number.
-- After each guess, the program tells:
-    - Bulls: Digits that are correct and in the right place.
-    - Cows: Digits that are correct but in the wrong place.
-- The game continues until the user guesses correctly (3 bulls).
+Battleship Game:
+
+The player tries to find the hidden battleship on a 5×5 grid.
+The ship is placed at a random row and column.
+The player guesses coordinates until they hit the ship.
 
 **Example**
 
-    Computer has chosen a 3-digit number. Try to guess it!
+    Computer: A battleship is hidden on a 5x5 grid. Try to find it!  
     
-    Enter guess: 123
-    Result: 1 bull(s), 1 cow(s)
+    Guess row: 2  
+    Guess col: 3  
+    Result: Miss!  
     
-    Enter guess: 456
-    Result: 0 bull(s), 0 cow(s)
-    
-    Enter guess: 321
-    Result: 0 bull(s), 3 cow(s)
-    
-    Enter guess: 135
-    Result: 1 bull(s), 2 cow(s)
-    
-    Enter guess: 159
-    Result: 3 bull(s), 0 cow(s)
-    
-    Congratulations! You guessed the number: 159
+    Guess row: 4  
+    Guess col: 1  
+    Result: Hit! You sunk the battleship!  
     
 ---
 
